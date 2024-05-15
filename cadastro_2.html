@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário e Reconhecimento Facial</title>
+    <link rel="stylesheet" href="assets/css/cadastro_2.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-image">
+            <img src="assets/img/undraw_medicine_b-1-ol.svg" alt="">
+        </div>
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>cadastro face</h1>
+                    </div>
+                    <div class="login-button">
+                        <button><a href="\cadastro.html">Entrar</a></button>
+                    </div>
+                </div>
+                <div>
+                    <video width="520" height="350" id="video"></video>
+                    <div class="captura-button">
+                        <button id="capture">Capturar Foto</button>
+                    </div>
+                    <canvas></canvas>
+                </div>
+                <div class="continue-button">
+                    <button><a href="#">Cadastrar</a></button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script defer src="assets/js/face-api.min.js"></script>
+    <script defer src="assets/js/reconhecimento.js"></script>
+</body>
+</html>
